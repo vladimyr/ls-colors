@@ -42,7 +42,7 @@ test('parses GNU style ls colors configuration', t => {
     [Category.Executable]: ['bold', 'green'],
     [Category.BlockDevice]: ['bgBlack', 'yellow', 'bold'],
     [Category.CharDevice]: ['bgBlack', 'yellow', 'bold'],
-    [Category.ExecutableSetuid]: ['gray', 'bgRed'],
+    [Category.ExecutableSetuid]: ['white', 'bgRed'],
     [Category.ExecutableSetgid]: ['black', 'bgYellow'],
     [Category.DirectoryWritableOthersSticky]: ['black', 'bgGreen'],
     [Category.DirectoryWritableOthersNoSticky]: ['blue', 'bgGreen']

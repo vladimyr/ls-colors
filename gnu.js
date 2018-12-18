@@ -8,6 +8,8 @@ const debug = require('debug')('parser');
 const Style = {
   0: 'default',
   1: 'bold',
+  2: 'dim',
+  3: 'italic',
   4: 'underline',
   7: 'inverse',
   30: 'black',
@@ -17,7 +19,7 @@ const Style = {
   34: 'blue',
   35: 'purple',
   36: 'cyan',
-  37: 'gray',
+  37: 'white',
   40: 'bgBlack',
   41: 'bgRed',
   42: 'bgGreen',
@@ -25,7 +27,7 @@ const Style = {
   44: 'bgBlue',
   45: 'bgPurple',
   46: 'bgCyan',
-  47: 'bgGray'
+  47: 'bgWhite'
 };
 
 const Attribute = {

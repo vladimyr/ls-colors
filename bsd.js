@@ -13,7 +13,7 @@ const Style = {
   e: 'blue',
   f: 'magenta',
   g: 'cyan',
-  h: 'gray',
+  h: 'white',
   x: 'default'
 };
 
