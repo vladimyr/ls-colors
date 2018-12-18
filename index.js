@@ -10,4 +10,6 @@ module.exports = function (ls_colors) {
   return isGNU(ls_colors) ? parseGNU(ls_colors) : parseBSD(ls_colors);
 };
 
+module.exports.parseBSD = parseBSD;
+module.exports.parseGNU = parseGNU;
 module.exports.Category = require('./category');
