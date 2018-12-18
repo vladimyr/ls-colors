@@ -4,7 +4,7 @@
   "description": "fetch LS_COLORS info",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tape test.js | tap-spec",
     "lint": "eslint ."
   },
   "repository": {
@@ -27,6 +27,13 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "rewiremock": "^3.12.3",
+    "sinon": "^7.2.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  },
+  "dependencies": {
+    "debug": "^4.1.0"
   }
 }

@@ -1,13 +1,13 @@
 'use strict';
 
-const ls_colors = (() => {
-  const c = process.env.LS_COLORS;
-  if (!c) return undefined;
-  return c.split(':').reduce((acc, cur) => {
-    const [k, v] = cur.split('=');
-    if (k) acc[k] = v;
-    return acc;
-  }, {});
-})();
+const parseBSD = require('./bsd');
+const parseGNU = require('./gnu');
 
-module.exports = exports = ls_colors;
+const isGNU = colors => colors.includes('=');
+
+module.exports = function (ls_colors) {
+  ls_colors = ls_colors || process.env.LS_COLORS || process.env.LSCOLORS;
+  return isGNU(ls_colors) ? parseGNU(ls_colors) : parseBSD(ls_colors);
+};
+
+module.exports.Category = require('./category');
