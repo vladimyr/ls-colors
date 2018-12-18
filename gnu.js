@@ -9,7 +9,7 @@ const Style = {
   0: 'default',
   1: 'bold',
   4: 'underline',
-  7: 'invert',
+  7: 'inverse',
   30: 'black',
   31: 'red',
   32: 'green',
