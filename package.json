@@ -12,7 +12,9 @@
     "url": "git+https://github.com/delta4d/ls-colors.git"
   },
   "keywords": [
-    "LS_COLORS"
+    "LS_COLORS",
+    "LSCOLORS",
+    "ls"
   ],
   "author": "delta4d",
   "license": "MIT",
